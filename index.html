@@ -3,20 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Home</title>
   </head>
-
   <body>
-    <nav>
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#secondpage">Wild Life Introduction </a></li>
-        <li><a href="#thirdpage">Wild Life Conservation</a></li>
-        <li><a href="fourthpage">Sri Lankan Leopard</a></li>
-        <li><a href="fifthpage">Animals In Sri Lanka</a></li>
-      </ul>
-    </nav>
-    <main></main>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">Sri Lankan Wildlife</a></div>
+        <ul class="links">
+          <li><a href="second">Introduction</a></li>
+          <li><a href="third">Conservation</a></li>
+          <li><a href="fourth">Leopard</a></li>
+          <li><a href="fifth">Animals</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="dropdown_menu">
+          <li><a href="second">Introduction</a></li>
+          <li><a href="third">Conservation</a></li>
+          <li><a href="fourth">Leopard</a></li>
+          <li><a href="fifth">Animals</a></li>
+        </div>
+      </div>
+    </header>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropdownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropdownMenu.classList.toggle("open");
+        const isopen = dropdownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isopen;
+      };
+    </script>
   </body>
 </html>
