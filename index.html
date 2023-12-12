@@ -44,7 +44,9 @@
         dropdownMenu.classList.toggle("open");
         const isopen = dropdownMenu.classList.contains("open");
 
-        toggleBtnIcon.classList = isopen;
+        toggleBtnIcon.classList = isopen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
       };
     </script>
   </body>

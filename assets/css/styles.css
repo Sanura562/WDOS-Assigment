@@ -10,6 +10,9 @@ body{
     background-image: url('../img/WILPATTU-Leopard-Image.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 li {
     list-style: none;
@@ -89,5 +92,11 @@ header {
     }
     .dropdown_menu{
         display: block;
+    }
+    @media (max-width: 576px){
+        .dropdown_menu{
+            right: 2rem;
+            width: 200px;
+        }
     }
 }
