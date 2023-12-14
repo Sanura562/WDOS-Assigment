@@ -4,10 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container {
+    display: flex;
+    gap: 100px;
+}
 body{
     height: 100vh;
     width: 100%;
-    background-image: url('../img/WILPATTU-Leopard-Image.jpg');
+    background-image: url('/assets/img/pexels-pixabay-459449.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,11 +23,11 @@ li {
 }
 a {
     text-decoration: none;
-    color: rgb(149, 203, 120);
+    color: #000000;
     font-size: 10px;
 }
 a:hover {
-    color: orange;
+    color: rgba(89, 168, 36, 0.691);
 }
 header {
     position: relative;
@@ -46,9 +50,11 @@ header {
 .navbar .links{
     display: flex;
     gap: 2rem;
+    font-size: 20px;
+    
 }
 .navbar .toggle_btn{
-    color: #fff;
+    color: #000000;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
@@ -81,9 +87,26 @@ header {
     align-items: center;
     justify-content: center;
 }
+.home_wraper{
+    position: relative;
+}
+.home_title{
+    text-align: center; 
+    position: absolute ;
+    left: 50%;
+    top: 50%;
+
+}
+
+
+
+
+
+
+
 
 /* RESPONSIVE DESIGN*/
-@media(max-width: 992px){
+@media(max-width: 768px){
     .navbar .links {
         display: none;
     }
