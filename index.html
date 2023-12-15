@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <title>Home</title>
-</head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">Sri Lankan Wildlife</a></div>
+        <ul class="links">
+          <li><a href="second">Introduction</a></li>
+          <li><a href="third">Conservation</a></li>
+          <li><a href="fourth">Leopard</a></li>
+          <li><a href="fifth">Animals</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
 
-<body>
-  <header>
-    <div class="navbar">
-      <div class="logo"><a href="#">Sri Lankan Wildlife</a></div>
-      <ul class="links">
-        <li><a href="second">Introduction</a></li>
-        <li><a href="third">Conservation</a></li>
-        <li><a href="fourth">Leopard</a></li>
-        <li><a href="fifth">Animals</a></li>
-      </ul>
-      <div class="toggle_btn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-
-      <div class="dropdown_menu">
-        <li><a href="second">Introduction</a></li>
-        <li><a href="third">Conservation</a></li>
-        <li><a href="fourth">Leopard</a></li>
-        <li><a href="fifth">Animals</a></li>
-      </div>
-    </div>
-  </header>
-  <!-- Hero -->
-  <section id="hero">
-    <div class="hero-container">
-      <h1>Welcome to Regna</h1>
-      <h2>We are team of talanted designers making websites with Bootstrap</h2>
-    </div>
-  </section>
-  <!-- about -->
-  <main id="main">
-    <section id="about">
-      <div class="container">
-        <div class="about-container">
-
-          <div class="content">
-            <h2 class="title">Few Words About Us</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et
-              dolore
-            </p>
-          </div>
-
+        <div class="dropdown_menu">
+          <ul class="dropdown_links">
+            <li><a href="second">Introduction</a></li>
+            <li><a href="third">Conservation</a></li>
+            <li><a href="fourth">Leopard</a></li>
+            <li><a href="fifth">Animals</a></li>
+          </ul>
         </div>
       </div>
-    </section><!-- #about -->
+    </header>
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-container">
+        <h1>
+          Sri Lankan <br />
+          Wildlife
+        </h1>
+      </div>
+    </section>
+    <!-- about -->
+    <main id="main">
+      <section id="about">
+        <div class="container">
+          <div class="about-container">
+            <div class="content">
+              <h2 class="title">
+                An Introduction To The <br />
+                Sri Lankan Wildlife
+              </h2>
+              <p>
+                Sri Lanka, a tropical island nation located in South Asia, is
+                renowned for its rich and diverse. <br />
+                The country's unique geographical features, including dense
+                rainforests, highlands, and coastal areas, <br />
+                contribute to its remarkable biodiversity. Sri Lanka is
+                considered a biodiversity hotspot, meaning it harbors a high
+                number of species that are found nowhere else on Earth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #about -->
+    </main>
 
-  </main>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropdownMenu = document.querySelector(".dropdown_menu");
 
+      toggleBtn.onclick = function () {
+        dropdownMenu.classList.toggle("open");
+        const isopen = dropdownMenu.classList.contains("open");
 
-
-
-
-
-
-
-
-
-
-  <script>
-    const toggleBtn = document.querySelector(".toggle_btn");
-    const toggleBtnIcon = document.querySelector(".toggle_btn i");
-    const dropdownMenu = document.querySelector(".dropdown_menu");
-
-    toggleBtn.onclick = function () {
-      dropdownMenu.classList.toggle("open");
-      const isopen = dropdownMenu.classList.contains("open");
-
-      toggleBtnIcon.classList = isopen
-        ? "fa-solid fa-xmark"
-        : "fa-solid fa-bars";
-    };
-  </script>
-</body>
-
+        toggleBtnIcon.classList = isopen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
 </html>

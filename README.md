@@ -1,1 +1,7 @@
-This is the Assignment that provided in WDOS module
+ASIA PACIFIC INSTITUTE OF INFORMATION TECHNOLOGY
+Level 4
+
+COMP40004 WEB DEVELOPMENT AND OPERATING SYSTEMS
+
+ Individual Assignment 2
+

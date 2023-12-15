@@ -29,12 +29,13 @@ a {
 }
 
 a:hover {
-    color: rgba(89, 168, 36, 0.691);
+    color: rgba(149, 173, 16, 0.87);
 }
 
 header {
     position: relative;
-    padding: 0 2rem;
+    background-color: #f3aa0028;
+   padding: 0 2rem;
 
 }
 
@@ -47,11 +48,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+   
+    
 }
 
 .navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
+    font-family:curs-
 }
 
 .navbar .links {
@@ -76,24 +81,26 @@ header {
     position: absolute;
     right: 2rem;
     top: 60px;
-    height: 0;
     width: 300px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
-    border-radius: 9px;
+    border-radius:  0px 0px 10px 10px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .dropdown_menu.open {
-    height: 150px;
+    display: block; 
 }
 
 .dropdown_menu li {
-    padding: 0.7rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.dropdown_links {
+    padding: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -142,7 +149,7 @@ header {
     font-weight: 700;
     line-height: 56px;
     text-transform: uppercase;
-    color: #fff;
+    color: #fafafa;
 }
 
 @media (max-width: 768px) {
@@ -235,7 +242,8 @@ header {
     }
 
     .dropdown_menu {
-        display: block;
+        
+        z-index: 10 ;
     }
 
     @media (max-width: 576px) {
