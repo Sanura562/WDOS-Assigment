@@ -18,6 +18,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-color: #163020;
+    font-family: sans-serif;
 }
 
 .navbar li {
@@ -338,6 +339,11 @@ header {
     text-align: center;
 }
 
+.list {
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
 
 
 .yala {
@@ -362,15 +368,27 @@ header {
     font-size: 50px;
 }
 
-.orderd {
-    list-style-type: disc;
-}
 
 .facts {
     display: flex;
     justify-content: center;
     min-height: 50vh;
-    color: #EEF0E5;
+    color: #000000;
+    background-color: #B6C4B6;
+    border-radius: 20px;
+}
+
+.facts-heading {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 6rem;
+    font-size: 50px;
+}
+
+.orderd {
+    font-size: 1.1rem;
+    justify-content: center;
 }
 
 /* footer section? */
