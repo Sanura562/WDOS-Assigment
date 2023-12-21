@@ -15,13 +15,12 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     background-color: #163020;
     font-family: sans-serif;
 }
 
-.navbar li {
+.navbar {
     list-style: none;
 }
 
@@ -37,70 +36,5 @@ a {
 header {
     position: relative;
     background-color: #163020;
-    padding: 0 2rem;
 
-}
-
-
-.navbar {
-    width: 100%;
-    height: 69px;
-    max-width: 1700px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-
-
-}
-
-.navbar .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navbar .links {
-    display: flex;
-    gap: 2rem;
-    font-size: 20px;
-
-}
-
-.navbar .toggle_btn {
-    color: #eee;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
-
-
-
-/*Dropdown_Menu*/
-.dropdown_menu {
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 0px 0px 10px 10px;
-    overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown_menu.open {
-    display: block;
-}
-
-.dropdown_menu li {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dropdown_links {
-    padding: 30px;
 }
