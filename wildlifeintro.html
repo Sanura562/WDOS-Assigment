@@ -47,6 +47,23 @@
         </div>
       </div>
     </header>
+    <section class="section2">
+      <div class="locations">
+        <div class="about-location">
+          <h1 class="section-heading">
+            Different Wildlife Locations In Sri Lanka
+          </h1>
+          <p class="location-intro">
+            These locations showcase the incredible diversity of wildlife in Sri
+            Lanka and offer unique opportunities for nature enthusiasts and
+            wildlife photographers. Each region has its own distinct ecosystem,
+            contributing to the overall richness of Sri Lanka's natural
+            heritage.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section class="footer">
       <div class="social">
         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -57,22 +74,37 @@
 
       <ul class="footer-list">
         <li>
-          <a href="#">Wildlife In Sri Lanka</a>
+          <a href="index.html">Wildlife In Sri Lanka</a>
         </li>
         <li>
-          <a href="#">Sri Lankan Wildlife Introduction</a>
+          <a href="wildlifeintro.html">Sri Lankan Wildlife Introduction</a>
         </li>
         <li>
-          <a href="#">Department W.C</a>
+          <a href="departmentwc.html">Department W.C</a>
         </li>
         <li>
-          <a href="#">Sri Lankan Leopard</a>
+          <a href="sl_leopard.html">Sri Lankan Leopard</a>
         </li>
         <li>
-          <a href="#">Animals S.L</a>
+          <a href="animalsinsl.html">Animals S.L</a>
         </li>
       </ul>
       <p class="copyright">Sanura Sihath @2023 Allrights Reserved</p>
     </section>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropdownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropdownMenu.classList.toggle("open");
+        const isopen = dropdownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isopen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
   </body>
 </html>

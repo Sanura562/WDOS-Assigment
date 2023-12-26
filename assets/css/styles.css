@@ -448,7 +448,7 @@ header {
 
 }
 
-/* RESPONSIVE DESIGN*/
+/* RESPONSIVE  NAVBAR DESIGN*/
 @media(max-width: 1092px) {
     .navbar .links {
         display: none;
