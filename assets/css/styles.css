@@ -244,6 +244,7 @@ header {
     text-align: center;
     padding-bottom: 50px;
     color: #EEF0E5;
+    line-height: 3rem;
 }
 
 @media (max-width: 768px) {
@@ -340,10 +341,12 @@ header {
 .list {
     font-size: 2rem;
     font-family: sans-serif;
+    padding-left: 2.5rem;
+    line-height: 4rem;
 }
 
 
-/* #RESPONSIVE */
+
 .yala {
     width: 500px;
     height: 500px;
@@ -448,7 +451,7 @@ header {
 
 }
 
-/* RESPONSIVE  NAVBAR DESIGN*/
+/* RESPONSIVE  DESIGN*/
 @media(max-width: 1092px) {
     .navbar .links {
         display: none;
@@ -477,6 +480,28 @@ header {
         align-items: center;
     }
 
-    .footer-nav {}
 
+}
+
+@media(max-width :1024px) {
+    .national-parks {
+        display: grid;
+    }
+
+    .bullet-lists {
+        display: flex;
+        padding-top: 8rem;
+        padding-left: 5rem;
+    }
+
+    .orderd {
+        align-items: center;
+        padding-left: 4.5rem;
+    }
+}
+
+@media(max-width :768px) {
+    .national-parks {
+        display: grid;
+    }
 }

@@ -113,7 +113,10 @@ header {
 .section2 {
     color: #eee;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.218)), url(../img/beautiful-shot-african-leopard-resting-rock-with-blurred-background.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .location-intro {
@@ -128,6 +131,12 @@ header {
     padding-bottom: 1.5rem;
 }
 
+.flex-conatiner {
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    background-color: #163020;
+}
 
 /* RESPONSIVE  NAVBAR DESIGN*/
 
