@@ -21,6 +21,10 @@ body {
 
 /* Navbar */
 .navbar {
+    padding: 30px;
+}
+
+.navbar ul {
     list-style: none;
 }
 
@@ -36,7 +40,6 @@ a {
 header {
     position: relative;
     background-color: #163020;
-
 }
 
 .navbar {
@@ -48,7 +51,6 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative;
-
 }
 
 .navbar .logo a {
@@ -81,7 +83,7 @@ header {
     backdrop-filter: blur(15px);
     border-radius: 0px 0px 10px 10px;
     overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .dropdown_menu.open {
@@ -104,22 +106,19 @@ header {
     justify-content: center;
     align-items: center;
     display: flex;
-    padding-top: 9rem;
+    padding: 9rem 2rem 0 2rem;
     position: relative;
     text-align: center;
-
-
 }
 
 .section2 {
     color: #eee;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.218)), url(../img/beautiful-shot-african-leopard-resting-rock-with-blurred-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.218)),
+        url(../img/beautiful-shot-african-leopard-resting-rock-with-blurred-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-
-
 }
 
 .location-intro {
@@ -129,16 +128,22 @@ header {
     display: flex;
     font-size: 1.5rem;
     text-align: center;
-    padding-top: 2rem;
+    padding: 2rem;
     line-height: 2rem;
-    padding-bottom: 3rem;
+}
+
+p {
+    padding: 1rem 2rem;
+}
+
+iframe {
+    padding: 30px;
 }
 
 .flex-conatiner {
     display: grid;
     justify-content: space-between;
-    background-color: #304D30;
-
+    background-color: #304d306d;
 }
 
 .flex-item1 {
@@ -155,7 +160,6 @@ header {
 
 .items-heading {
     padding-top: 3rem;
-    padding-bottom: 3rem;
 }
 
 .intro {
@@ -166,16 +170,21 @@ header {
     font-size: 20px;
 }
 
+.table {
+    padding: 30px;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    margin-top: 30px;
     border: 10px;
 }
 
 td,
 th {
-    border: 1px solid #dddddd;
+    border: 1px solid #131313;
     text-align: left;
     padding: 8px;
 }
@@ -186,7 +195,7 @@ tr:nth-child(even) {
 
 /* RESPONSIVE  NAVBAR DESIGN*/
 
-@media(max-width: 1333px) {
+@media (max-width: 1333px) {
     .navbar .links {
         display: none;
     }
@@ -196,7 +205,6 @@ tr:nth-child(even) {
     }
 
     .dropdown_menu {
-
         z-index: 10;
     }
 
@@ -208,17 +216,16 @@ tr:nth-child(even) {
     }
 }
 
-@media(max-width: 1564px) {
+@media (max-width: 1564px) {
     .orderd {
         justify-content: center;
         align-items: center;
     }
 
     .footer-nav {}
-
 }
 
-@media(max-width :425px) {}
+@media (max-width: 425px) {}
 
 .section2 {
     align-items: center;
@@ -288,5 +295,22 @@ tr:nth-child(even) {
     text-align: center;
     font-size: 13px;
     color: rgb(0, 0, 0);
+}
 
+
+
+@media (max-width: 768px) {
+    iframe {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .intro {
+        - font-size: 1rem;
+        padding: 20px;
+    }
+
+    .navbar {
+        padding: 30px;
+    }
 }
