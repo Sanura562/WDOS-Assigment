@@ -143,7 +143,7 @@ iframe {
 .flex-conatiner {
     display: grid;
     justify-content: space-between;
-    background-color: #304d306d;
+    background-color: #0000004a;
 }
 
 .flex-item1 {
@@ -221,8 +221,6 @@ tr:nth-child(even) {
         justify-content: center;
         align-items: center;
     }
-
-    .footer-nav {}
 }
 
 @media (max-width: 425px) {}
@@ -306,7 +304,7 @@ tr:nth-child(even) {
     }
 
     .intro {
-        - font-size: 1rem;
+        font-size: 1rem;
         padding: 20px;
     }
 
