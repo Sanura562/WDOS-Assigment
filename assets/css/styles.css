@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 /* Department_page */
 .container1 {
     display: flex;
@@ -13,8 +11,6 @@
     flex-wrap: wrap;
     margin: 15px 0;
     gap: 10px;
-
-
 }
 
 .department_location {
@@ -65,6 +61,103 @@ iframe {
 
 /* END_of_ Department_page */
 
+
+.image img {
+
+    width: 600px;
+    height: 500px;
+    padding: 30px;
+    border-radius: 60px;
+
+
+}
+
+.text {
+    width: 50%;
+    color: #000000;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20px;
+}
+
+.text .about {
+    padding-top: 20px;
+}
+
+.flexbox1 {
+    display: flex;
+    width: 100%;
+    background-color: #B6C4B6;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 40px 0;
+
+
+}
+
+.about_threat {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* .flexbox2 {
+    display: flex;
+    width: 100%;
+    background-color: #B6C4B6;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+} */
+
+.image img {
+    width: 600px;
+    height: 500px;
+    padding: 30px;
+    border-radius: 60px;
+    float: left;
+}
+
+.Leopard_heading {
+    margin: 30px 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fafafa;
+    text-align: center;
+    padding: 50px;
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+.Threat1 {
+    margin: 30px 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fafafa;
+    text-align: center;
+    padding: 50px;
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+
 body {
     height: 100vh;
     width: 100%;
@@ -107,6 +200,7 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    color: #000000;
 
 
 
@@ -222,18 +316,6 @@ header {
     color: #fafafa;
 }
 
-@media (max-width: 768px) {
-    #hero h1 {
-        font-size: 28px;
-        line-height: 36px;
-    }
-}
-
-#hero h2 {
-    color: #eee;
-    margin-bottom: 50px;
-    font-size: 24px;
-}
 
 @media (max-width: 768px) {
     #hero h2 {
@@ -241,6 +323,12 @@ header {
         line-height: 24px;
         margin-bottom: 30px;
     }
+
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
 }
 
 /*--------------------------------------------------------------
@@ -581,5 +669,35 @@ header {
 
     .container1 img {
         width: 100%;
+    }
+
+    .park_head {
+        padding-top: 50px;
+    }
+
+    .image img {
+        width: 350px;
+        height: 300px;
+    }
+
+}
+
+@media(max-width: 880px) {
+    .flexbox1 {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
+
+
+
+@media(max-width: 1272px) {
+    .text {
+        padding: 40px;
+
     }
 }
