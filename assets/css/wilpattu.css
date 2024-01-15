@@ -47,3 +47,36 @@ body {
     line-height: 3rem;
     padding: 29px 29px 50px 29px;
 }
+
+.wilpattu-images {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.wilpattu-images img {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    padding: 30px;
+    border-radius: 60px;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.wilpattu-images img:hover {
+
+    transform: translateY(-20px);
+    transform: scale(1.02);
+}
+
+.location h2 {
+    color: black;
+}
+
+.location {
+    justify-content: center;
+    align-items: center;
+}
