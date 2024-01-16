@@ -125,12 +125,20 @@ iframe {
     height: 500px;
     padding: 30px;
     border-radius: 60px;
+    justify-content: center;
+    align-items: center;
+}
 
+.wilpattu-images {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
 @media(max-width: 1000px) {
     .image img {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 }
 
@@ -563,7 +571,7 @@ header {
     gap: 20px;
     width: 100%;
     justify-content: center;
-    height: 100px;
+    height: 100vh;
 }
 
 .wilpattu {
@@ -600,7 +608,7 @@ header {
     gap: 20px;
     width: 100%;
     justify-content: center;
-    height: 75vh;
+    height: 100vh;
 }
 
 .wilpattu {
