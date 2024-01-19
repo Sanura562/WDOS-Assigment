@@ -136,11 +136,7 @@ iframe {
     flex-direction: row;
 }
 
-@media(max-width: 1000px) {
-    .image img {
-        /* flex-direction: column; */
-    }
-}
+@media(max-width: 1000px) {}
 
 .Leopard_heading {
     margin: 30px 0 10px 0;
